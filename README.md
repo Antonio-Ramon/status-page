@@ -29,5 +29,6 @@ Reservamos uma área para exibir em formato de gráfico os problemas reportados 
 * Faça um pull request ou encaminhe o link do seu for para **desenvolvimento@alertrack.com.br** com o assundo **Vaga Front-End**
 
 
+Pull Request Help: https://blog.da2k.com.br/2015/02/04/git-e-github-do-clone-ao-pull-request/
 
 Good Luck!
