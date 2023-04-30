@@ -1,5 +1,6 @@
 import NavBar from "./components/NavBar";
 import Charts from "./components/Charts";
+import Logs from "./components/Logs";
 import "./App.css";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div>
       <NavBar />
       <Charts />
+      <Logs />
     </div>
   );
 }
