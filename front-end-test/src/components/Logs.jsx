@@ -24,7 +24,7 @@ const Logs = () => {
                 Gerador atenderá como backup em casos semelhantes, garantindo
                 assim, a continuidade por períodos maiores que 23 horas.
               </p>
-              <p className="text-xs text-[#4D4F5C] mt-4">4 horas atrás</p>
+              <p className="text-xs text-[#4D4F5C] mt-4">16:10</p>
             </div>
           </div>
           <div className="flex flex-row">
@@ -36,7 +36,7 @@ const Logs = () => {
               <p className="text-xs text-[#4D4F5C]">
                 Aquisição de nova unidade de GERADOR DE ENERGIA A DIESEL.
               </p>
-              <p className="text-xs text-[#4D4F5C] mt-4">8 horas atrás</p>
+              <p className="text-xs text-[#4D4F5C] mt-4">15:53</p>
             </div>
           </div>
           <div className="flex flex-row">
@@ -57,7 +57,7 @@ const Logs = () => {
                 de energia, menos o tempo necessário para o desligamento dos
                 servidores
               </p>
-              <p className="text-xs text-[#4D4F5C] mt-4">4 horas atrás</p>
+              <p className="text-xs text-[#4D4F5C] mt-4">14:25 </p>
             </div>
           </div>
         </div>
@@ -90,7 +90,7 @@ const Logs = () => {
               <p className="text-xs text-[#4D4F5C]">
                 WhatsApp voltou a operar normalmente.
               </p>
-              <p className="text-xs text-[#4D4F5C] mt-4">4 horas atrás</p>
+              <p className="text-xs text-[#4D4F5C] mt-4">8:38</p>
             </div>
           </div>
           <div className="flex flex-row">
@@ -102,7 +102,7 @@ const Logs = () => {
               <p className="text-xs text-[#4D4F5C]">
                 O serviço está sendo restaurado para alguns países.
               </p>
-              <p className="text-xs text-[#4D4F5C] mt-4">8 horas atrás</p>
+              <p className="text-xs text-[#4D4F5C] mt-4">5:08</p>
             </div>
           </div>
           <div className="flex flex-row">
@@ -116,7 +116,7 @@ const Logs = () => {
                 mundo. Não é poss ível usar o serviço porque o servidor está
                 fora do ar.
               </p>
-              <p className="text-xs text-[#4D4F5C] mt-4">4 horas atrás</p>
+              <p className="text-xs text-[#4D4F5C] mt-4">3:25</p>
             </div>
           </div>
         </div>

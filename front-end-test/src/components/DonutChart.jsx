@@ -6,12 +6,15 @@ const DonutChart = () => {
   const options = {
     chart: {
       type: "pie",
-      plotBackgroundColor: null,
-      plotBorderWidth: null,
-      plotShadow: false,
+      marginTop: 90,
+      marginBottom: 30,
     },
     title: {
-      text: "Meu gráfico de donut",
+      text: "Brasil",
+      y: 50,
+      style: {
+        fontWeight: "normal",
+      },
     },
     tooltip: {
       pointFormat: "{series.name}: <b>{point.y}</b>",
@@ -20,7 +23,7 @@ const DonutChart = () => {
       pie: {
         innerSize: "58%",
         dataLabels: {
-          enabled: true,
+          enabled: false,
           format: "<b>{point.name}</b>: {point.y}",
         },
       },
@@ -30,24 +33,28 @@ const DonutChart = () => {
     },
     series: [
       {
-        name: "Dados",
+        name: "Usuários",
         colorByPoint: true,
         data: [
           {
-            name: "Série 1",
+            name: "Norte",
             y: 20,
           },
           {
-            name: "Série 2",
+            name: "Nordeste",
             y: 20,
           },
           {
-            name: "Série 3",
-            y: 30,
+            name: "Sudeste",
+            y: 20,
           },
           {
-            name: "Série 4",
-            y: 30,
+            name: "Centro Oeste",
+            y: 20,
+          },
+          {
+            name: "Sul",
+            y: 20,
           },
         ],
       },
