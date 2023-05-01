@@ -5,7 +5,7 @@ import React from "react";
 
 const Logs = () => {
   return (
-    <div className="relative flex flex-col items-center gap-8 pt-36 pb-10">
+    <div className="relative flex flex-col items-center gap-5 pt-36 pb-10">
       <p className="absolute w-11/12 lg:w-[914px] flex justify-start inset-y-20 inset-auto sm:inset-y-20 lg:inset-y-20 font-normal text-[#4D4F5C] text-lg">
         Últimos Incidentes
       </p>
@@ -19,8 +19,8 @@ const Logs = () => {
               <img src={CheckLogs} alt="" />
             </div>
             <div>
-              <p className="text-[16px] mb-1">Solução</p>
-              <p className="text-[12px] text-[#4D4F5C]">
+              <p className="text-base mb-1">Solução</p>
+              <p className="text-xs text-[#4D4F5C]">
                 Gerador atenderá como backup em casos semelhantes, garantindo
                 assim, a continuidade por períodos maiores que 23 horas.
               </p>
@@ -62,8 +62,64 @@ const Logs = () => {
           </div>
         </div>
       </div>
+
       <div className="w-11/12 lg:w-[914px] h-auto bg-white drop-shadow-md rounded-sm">
-        logs
+        <div className="flex flex-col p-10 gap-10">
+          <strong className="text-[14px] text-[#4D4F5C]">
+            29 de Abril 2020
+          </strong>
+          <div className="flex flex-row">
+            <p className="italic text-sm text-[#4D4F5C]">
+              Nenhum incidente neste dia
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-11/12 lg:w-[914px] h-auto bg-white drop-shadow-md rounded-sm">
+        <div className="flex flex-col p-10 gap-10">
+          <strong className="text-[14px] text-[#4D4F5C]">
+            28 de Abril 2020
+          </strong>
+          <div className="flex flex-row">
+            <div className="flex-shrink-0 mr-5">
+              <img src={CheckLogs} alt="" />
+            </div>
+            <div>
+              <p className="text-base mb-1">Solução</p>
+              <p className="text-xs text-[#4D4F5C]">
+                WhatsApp voltou a operar normalmente.
+              </p>
+              <p className="text-xs text-[#4D4F5C] mt-4">4 horas atrás</p>
+            </div>
+          </div>
+          <div className="flex flex-row">
+            <div className="flex-shrink-0 mr-5">
+              <img src={EyeLogs} alt="" />
+            </div>
+            <div>
+              <p className="text-base mb-1">Problema sendo monitorado</p>
+              <p className="text-xs text-[#4D4F5C]">
+                O serviço está sendo restaurado para alguns países.
+              </p>
+              <p className="text-xs text-[#4D4F5C] mt-4">8 horas atrás</p>
+            </div>
+          </div>
+          <div className="flex flex-row">
+            <div className="flex-shrink-0 mr-5">
+              <img src={IncidentLogs} alt="" />
+            </div>
+            <div>
+              <p className="text-base mb-1">WhatsApp Interrompido</p>
+              <p className="text-xs text-[#4D4F5C]">
+                O WhatsApp está passando por uma interrupção geral em todo o
+                mundo. Não é poss ível usar o serviço porque o servidor está
+                fora do ar.
+              </p>
+              <p className="text-xs text-[#4D4F5C] mt-4">4 horas atrás</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

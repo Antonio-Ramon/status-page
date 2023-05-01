@@ -10,6 +10,7 @@ const Charts = () => {
       <div className="w-11/12 lg:w-[914px] bg-gray-300 drop-shadow-md rounded-sm">
         <MainChart />
       </div>
+
       <div className="flex w-11/12 lg:w-[914px] flex-wrap flex-col lg:flex-row items-center md:items-center gap-[22px]">
         <div className="w-11/12 lg:w-[515px] bg-gray-300 drop-shadow-md rounded-sm">
           <DonutChart />
@@ -18,6 +19,7 @@ const Charts = () => {
           <Services />
         </div>
       </div>
+
       <div className="w-11/12 lg:w-[914px] bg-gray-300 drop-shadow-md rounded-sm">
         <ServicesActivity />
       </div>

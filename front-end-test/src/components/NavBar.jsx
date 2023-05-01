@@ -14,7 +14,7 @@ const NavBar = () => {
           alt="checkIcon"
         />
         <div>
-          <p className="text-xl font-bold text-[#43425D] pt-6">
+          <p className="text-lg font-bold text-[#43425D] pt-6">
             Todo o serviço operacional
           </p>
           <p className="text-sm">

@@ -25,6 +25,9 @@ const DonutChart = () => {
         },
       },
     },
+    credits: {
+      enabled: false,
+    },
     series: [
       {
         name: "Dados",

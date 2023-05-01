@@ -15,6 +15,9 @@ const MainChart = () => {
         text: "Valores",
       },
     },
+    credits: {
+      enabled: false,
+    },
     series: [
       {
         name: "Série 1",
@@ -31,7 +34,7 @@ const MainChart = () => {
     <div>
       <HighchartsReact highcharts={Highcharts} options={options} />
     </div>
-  )
+  );
 };
 
 export default MainChart;
