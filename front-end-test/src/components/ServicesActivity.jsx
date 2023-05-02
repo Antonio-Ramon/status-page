@@ -2,15 +2,13 @@ import React from "react";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
-let numberOfBars = 40;
+let numberOfBars = 31;
 const data = [];
 
 for (let i = 1; i <= numberOfBars; i++) {
   const objects = { name: `Bar ${i}`, y: 1 };
   data.push(objects);
 }
-
-const log = {};
 
 const options = {
   chart: {
@@ -61,7 +59,7 @@ const options = {
   ],
   plotOptions: {
     column: {
-      pointWidth: 17,
+      pointWidth: 10,
       color: "#4AD991",
     },
   },
