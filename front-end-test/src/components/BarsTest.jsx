@@ -21,20 +21,17 @@ const BarsTest = () => {
             ? { backgroundColor: "#FFDA83" }
             : {}
         }
-      ></div>
+      >
+        <Tooltip
+          target=".barras"
+          content={i + status}
+          position="top"
+          style={{ fontSize: "1rem", width: "120px" }}
+        />
+      </div>
     );
   }
-  return (
-    <div className="w-11/12 flex flex-row justify-center">
-      {barras}
-      <Tooltip
-        target=".barras"
-        content={i + status}
-        position="top"
-        style={{ fontSize: "1rem", width: "120px" }}
-      />
-    </div>
-  );
+  return <div className="w-11/12 flex flex-row justify-center">{barras}</div>;
 };
 
 export default BarsTest;
