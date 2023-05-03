@@ -1,15 +1,15 @@
 import React from "react";
 import { Tooltip } from "primereact/tooltip";
 import "primereact/resources/primereact.min.css";
-import "primereact/resources/themes/tailwind-light/theme.css";
+import "primereact/resources/themes/fluent-light/theme.css";
 import CheckServices from "../assets/icons/CheckServices.png";
 import MaintainServices from "../assets/icons/MaintainServices.png";
 import AlertServices from "../assets/icons/AlertServices.png";
 
 const Services = () => {
-  const working = "Funcionando";
-  const maintain = "Manutenção";
-  const alert = "Alerta";
+  const working = "Operando Lorem Ipsum";
+  const maintain = "Em Manutenção Lorem Ipsum";
+  const alert = "Oscilando Lorem Ipsum ";
 
   return (
     <div className="flex flex-col m-7 gap-3">
@@ -17,14 +17,13 @@ const Services = () => {
       <div className="flex flex-row justify-between"></div>
       <p className="flex flex-row justify-between">
         SacDigital
+        <img id="check" src={CheckServices} alt="" />
         <Tooltip
           target="#check"
           content={working}
-          position="top"
-          mouseTrack="true"
-          mouseTrackTop={15}
+          position="left"
+          style={{ fontSize: "1rem", width: "120px" }}
         />
-        <img id="check" src={CheckServices} alt="" />
       </p>
       <hr />
       <p className="flex flex-row justify-between">
@@ -38,9 +37,8 @@ const Services = () => {
         <Tooltip
           target="#maintain"
           content={maintain}
-          position="top"
-          mouseTrack="true"
-          mouseTrackTop={15}
+          position="left"
+          style={{ fontSize: "1rem", width: "135px" }}
         />
         <img id="maintain" src={MaintainServices} alt="" />
       </p>
@@ -51,9 +49,8 @@ const Services = () => {
         <Tooltip
           target="#alert"
           content={alert}
-          position="top"
-          mouseTrack="true"
-          mouseTrackTop={15}
+          position="left"
+          style={{ fontSize: "1rem", width: "120px" }}
         />
         <img id="alert" src={AlertServices} alt="" />
       </p>

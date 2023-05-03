@@ -59,7 +59,7 @@ const options = {
   ],
   plotOptions: {
     column: {
-      pointWidth: 10,
+      pointWidth: 17,
       color: "#4AD991",
     },
   },
