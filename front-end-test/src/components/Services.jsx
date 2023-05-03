@@ -13,57 +13,63 @@ const Services = () => {
 
   return (
     <div className="flex flex-col m-7 gap-3">
-      <p className="text-xl mb-4">Serviços</p>
-      <div className="flex flex-row justify-between"></div>
-      <p className="flex flex-row justify-between">
+      <p className="text-xl mb-6">Serviços</p>
+      <p className="flex flex-row justify-between text-[#4D4F5C]">
         SacDigital
-        <img id="check" src={CheckServices} alt="" />
+        <img className="w-7" id="check" src={CheckServices} alt="" />
         <Tooltip
           target="#check"
           content={working}
           position="left"
-          style={{ fontSize: "1rem", width: "120px" }}
+          showDelay={200}
+          hideDelay={200}
+          style={{ fontSize: "0.9rem", width: "120px" }}
         />
       </p>
       <hr />
-      <p className="flex flex-row justify-between">
+      <p className="flex flex-row justify-between text-[#4D4F5C]">
         Panfleto.Online
-        <img id="check" src={CheckServices} alt="" />{" "}
+        <img className="w-7" id="check" src={CheckServices} alt="" />{" "}
       </p>
       <hr />
 
-      <p className="flex flex-row justify-between">
+      <p className="flex flex-row justify-between text-[#4D4F5C]">
         SMS Ideal
         <Tooltip
           target="#maintain"
           content={maintain}
           position="left"
-          style={{ fontSize: "1rem", width: "135px" }}
+          showDelay={200}
+          hideDelay={200}
+          style={{ fontSize: "0.9rem", width: "135px" }}
         />
-        <img id="maintain" src={MaintainServices} alt="" />
+        <img className="w-7" id="maintain" src={MaintainServices} alt="" />
       </p>
       <hr />
 
-      <p className="flex flex-row justify-between">
+      <p className="flex flex-row justify-between text-[#4D4F5C]">
         Consulta Ideal
         <Tooltip
           target="#alert"
           content={alert}
           position="left"
-          style={{ fontSize: "1rem", width: "120px" }}
+          showDelay={200}
+          hideDelay={200}
+          style={{ fontSize: "0.9rem", width: "120px" }}
         />
-        <img id="alert" src={AlertServices} alt="" />
+        <img className="w-7" id="alert" src={AlertServices} alt="" />
       </p>
       <hr />
 
-      <p className="flex flex-row justify-between">
+      <p className="flex flex-row justify-between text-[#4D4F5C]">
         WhatsApp
-        <img id="check" src={CheckServices} alt="" />
+        <img className="w-7" id="check" src={CheckServices} alt="" />
       </p>
       <hr />
 
-      <p className="flex flex-row justify-between">
-        WhatsApp Business API <img id="check" src={CheckServices} alt="" />
+      <p className="flex flex-row justify-between text-[#4D4F5C]">
+        WhatsApp Business API{" "}
+        <img className="w-7" id="check" src={CheckServices} alt="" />
       </p>
     </div>
   );

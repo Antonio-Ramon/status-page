@@ -48,14 +48,7 @@ const Logs = () => {
               <p className="text-xs text-[#4D4F5C]">
                 Devido a incidentes naturais houvera a presença da falta de
                 energia na região por tempo não previsto, fazendo com que hajam
-                paradas do fornecimento de energia de forma segura, o que faz
-                com que a cada período de 23horas seja obrigatório o reinício
-                das atividades dos serviços prestados. Isto ocorre diante ao
-                fato de que o gerador disponibilizado pela ALERTRACK possui
-                coeficiência de até 20 Horas de disponibilidade do fornecimento
-                contínuo, somados à disponibilização por parte de armazenamento
-                de energia, menos o tempo necessário para o desligamento dos
-                servidores
+                paradas do fornecimento de energia de forma segura.
               </p>
               <p className="text-xs text-[#4D4F5C] mt-4">14:25 </p>
             </div>

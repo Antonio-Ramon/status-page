@@ -1,77 +1,42 @@
 import React from "react";
-import Highcharts from "highcharts";
-import HighchartsReact from "highcharts-react-official";
+import { Tooltip } from "primereact/tooltip";
 
-let numberOfBars = 31;
-const data = [];
+const ServicesActivity = () => {
+  const barras = [];
 
-for (let i = 1; i <= numberOfBars; i++) {
-  const objects = { name: `Bar ${i}`, y: 1 };
-  data.push(objects);
-}
+  for (let i = 1; i <= 31; i++) {
+    const tooltipText =
+      i === 30
+        ? `${i} de junho de 2023 Em Manutenção`
+        : i === 28 || i === 31
+        ? `${i} de junho de 2023 Sistema Oscilando`
+        : `${i} de junho de 2023 Operando`;
+    barras.push(
+      <div
+        key={i}
+        id={`bar-${i}`}
+        className="barras h-16 w-4 bg-[#4AD991] mr-1 md:mr-2 lg:mr-2"
+        style={
+          i === 30
+            ? { backgroundColor: "#FF215D" }
+            : i === 28 || i === 31
+            ? { backgroundColor: "#FFDA83" }
+            : {}
+        }
+      >
+        <Tooltip
+          target={`#bar-${i}`}
+          content={tooltipText}
+          position="top"
+          showDelay={200}
+          hideDelay={200}
+          style={{ fontSize: "0.9rem", width: "150px" }}
+        />
+      </div>
+    );
+  }
 
-const options = {
-  chart: {
-    type: "column",
-    height: 250,
-    marginBottom: 70,
-    marginLeft: 50,
-    marginTop: 30,
-    marginRight: 50,
-  },
-  title: {
-    text: "Tempo de Atividades dos Serviços",
-    align: "left",
-    style: {
-      fontWeight: "normal",
-    },
-    x: 40,
-    y: 40,
-  },
-  xAxis: {
-    categories: data.map((item) => item.name),
-    gridLineWidth: 0,
-    lineWidth: 0,
-    labels: {
-      enabled: false,
-    },
-  },
-  yAxis: {
-    min: 0,
-    title: {
-      text: "",
-    },
-    gridLineWidth: 0,
-    labels: {
-      enabled: false,
-    },
-  },
-  legend: {
-    align: "left",
-    floating: true,
-    x: 30,
-  },
-  series: [
-    {
-      name: "90 dias atrás",
-      data: data.map((item) => item.y),
-    },
-  ],
-  plotOptions: {
-    column: {
-      pointWidth: 17,
-      color: "#4AD991",
-    },
-  },
-  credits: {
-    enabled: false,
-  },
+  return <div className="w-11/12 flex flex-row justify-center">{barras}</div>;
 };
-
-const ServicesActivity = () => (
-  <div className="">
-    <HighchartsReact highcharts={Highcharts} options={options} />
-  </div>
-);
 
 export default ServicesActivity;
