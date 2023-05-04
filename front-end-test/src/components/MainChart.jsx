@@ -5,8 +5,10 @@ import HighchartsReact from "highcharts-react-official";
 const MainChart = () => {
   const options = {
     chart: {
-      spacingRight: 20,
+      height: 350,
+      spacingRight: 30,
       spacingLeft: 25,
+      spacingBottom: 60,
       marginTop: 70,
     },
     title: {
@@ -41,7 +43,12 @@ const MainChart = () => {
         },
       },
     },
-    legend: {},
+    legend: {
+      align: "right",
+      verticalAlign: "top",
+      layout: "vertical",
+      y: 50,
+    },
     credits: {
       enabled: false,
     },
@@ -73,13 +80,25 @@ const MainChart = () => {
         },
       },
     ],
+    responsive: {
+      rules: [
+        {
+          condition: {
+            maxWidth: 700,
+          },
+          chartOptions: {
+            legend: {
+              align: "center",
+              verticalAlign: "bottom",
+              layout: "horizontal",
+            },
+          },
+        },
+      ],
+    },
   };
 
-  return (
-    <div>
-      <HighchartsReact highcharts={Highcharts} options={options} />
-    </div>
-  );
+  return <HighchartsReact highcharts={Highcharts} options={options} />;
 };
 
 export default MainChart;
