@@ -21,12 +21,11 @@ const Charts = () => {
       </div>
 
       <div className="w-11/12 lg:w-[914px] pb-5 flex flex-col items-center justify-center bg-white drop-shadow-md rounded-sm">
-        <div className="w-full flex pl-4 md:pl-16 lg:pl-20 pt-4 pb-9">
+        <div className="w-full flex pl-4 md:pl-16 lg:pl-20 pt-4 pb-7">
           <p className="text-lg text-[#4D4F5C]">
             Tempo de Atividades dos Serviços
           </p>
         </div>
-        {/* <BarsTest /> */}
         <ServicesActivity />
         <div className="w-full flex pl-4 md:pl-16 lg:pl-20 pt-3">
           <p className="text-sm text-[#4D4F5C]">30 dias atrás</p>
