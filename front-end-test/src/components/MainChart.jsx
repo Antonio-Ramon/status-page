@@ -30,7 +30,7 @@ const MainChart = () => {
       // Atualiza o estado de randomMexico com os novos valores aleatórios
 
       setRandomMexico(randomMexicoData);
-    }, 5000);
+    }, 5000000);
 
     // Retorna uma função que limpa o intervalo quando o componente é desmontado
     return () => clearInterval(interval);
@@ -38,6 +38,7 @@ const MainChart = () => {
 
   const options = {
     chart: {
+      type: "area",
       height: 350,
       spacingRight: 30,
       spacingLeft: 25,
@@ -81,11 +82,18 @@ const MainChart = () => {
       verticalAlign: "top",
       layout: "vertical",
       y: 50,
+      symbolHeight: 10,
+      symbolWidth: 20,
+      symbolRadius: 0,
     },
     credits: {
       enabled: false,
     },
-
+    plotOptions: {
+      series: {
+        fillOpacity: 0.05,
+      },
+    },
     series: [
       {
         name: "México",
