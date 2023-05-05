@@ -30,7 +30,7 @@ const MainChart = () => {
       // Atualiza o estado de randomMexico com os novos valores aleatórios
 
       setRandomMexico(randomMexicoData);
-    }, 5000000);
+    }, 5000);
 
     // Retorna uma função que limpa o intervalo quando o componente é desmontado
     return () => clearInterval(interval);
