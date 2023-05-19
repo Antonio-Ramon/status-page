@@ -1,4 +1,4 @@
-# Desafio Front-end: Landpage Status de Serviço
+## Desafio Front-end: Landpage Status de Serviço
 
 ![Preview](front-end-test/preview.png)
 
@@ -8,13 +8,13 @@ O objetivo do desafio era criar uma LandPage de Status para informar os usuário
 
 Foi separado uma área para exibir em formato de gráfico os problemas reportados pelos usuários do WhatsApp em todo mundo!
 
-Confira na versão em Live do projeto: https://status-page-beige.vercel.app/
+Confira o projeto através do [Link](https://status-page-beige.vercel.app/)
 
 ### Tecnologias usadasa
 
 * React
 * Tailwindcss
-* Gráficos: https://www.highcharts.com/
+* [Highcharts](https://www.highcharts.com/)
 
 ### Diferenciais
 
